@@ -1,8 +1,10 @@
 /* font family imported */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-* {
+body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -65,6 +67,12 @@
     color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
+    border-radius: 10px;
+    transition: padding 2s ease-in-out;
+}
+
+.live-button:hover {
+    padding: 15px 30px;
 }
 
 .live-button i {
@@ -141,6 +149,7 @@
 
 /* uocoming-copa styles */
 .upcoming-copa {
+    width: fit-content;
     margin: 5% 10%;
     border-radius: 20px;
     padding: 2%;
@@ -200,7 +209,11 @@
 
 
 /* add media query */
-@media only screen and (max-width: 668px) {
+
+/* responsive for mobile devices */
+@media only screen and (max-width: 688px) {
+
+    /* responsive top section  */
     .top-section {
         height: 700px;
         display: grid;
@@ -249,6 +262,7 @@
         margin-left: 5px;
     }
 
+    /* responsive top players area  */
     .players {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -257,10 +271,11 @@
 
     }
 
+    /* responsive champion area  */
     .champion-area {
         margin-bottom: 100px;
         margin: 10% 10%;
-        height: 1350px;
+        height: 1450px;
     }
 
     .champions {
@@ -272,8 +287,9 @@
 
     }
 
+    /* responsive upcoming copa  */
     .upcoming-copa {
-        height: 1300px;
+        max-height: 1650px;
         margin: 10%;
         border-radius: 20px;
         padding: 2%;
@@ -285,10 +301,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 5%;
-        grid-row-gap: .5%;
+        grid-row-gap: .2%;
 
     }
 
+    /* responsive footer  */
     .footer-content {
         display: flex;
         flex-direction: column;
@@ -309,9 +326,81 @@
     .copyright {
         text-align: right;
     }
-
-
-
-
-
 }
+
+/* responsive for tablet devices */
+
+@media only screen and (min-width: 669px) and (max-width: 992px) {
+
+    /* responsive top section area  */
+    .top-section {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        padding: 10%;
+        align-items: flex-start;
+    }
+
+    .section-tilte {
+        font-size: 37px;
+        width: 366px;
+        height: 0px;
+        margin: 0;
+    }
+
+
+    .section-thumbnail img {
+        margin-top: 10%;
+        width: 100%;
+        height: 50%;
+    }
+
+    /* responsive top players area  */
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 27px;
+        margin: 10% 10% 5% 15%;
+
+    }
+
+    /* responsive upcoming copa  */
+    .upcoming-copa {
+        max-height: 800px;
+        margin: 10%;
+        border-radius: 20px;
+        padding: 2%;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+    }
+
+    .teams {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 5%;
+        grid-row-gap: .5%;
+
+    }
+
+    /* responsive champion area  */
+    .champion-area {
+        margin-left: 15%;
+    }
+
+    /* responsive footer  */
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content .logo img {
+        max-width: 30%;
+        max-height: 30%;
+        margin-left: 300px;
+    }
+
+    .icon i {
+        margin: 10px 10px;
+    }
