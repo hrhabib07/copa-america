@@ -5,8 +5,6 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 .container {
@@ -400,5 +398,13 @@ body {
 
     .icon i {
         margin: 10px 10px;
+    }
+
+}
+
+@media only for screen and (min-width:1312px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 }
