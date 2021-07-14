@@ -5,8 +5,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; //horizontal
-    overflow-y: scroll; //vertical
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .container {
@@ -53,7 +53,7 @@ body {
 
 
 
-.section-tilte {
+.section-title {
     font-size: 64px;
     width: 485px;
     height: 260px;
@@ -149,7 +149,7 @@ body {
     height: 40%;
 }
 
-/* uocoming-copa styles */
+/* upcoming COPA styles */
 .upcoming-copa {
     width: fit-content;
     margin: 5% 10%;
@@ -406,3 +406,4 @@ body {
     .icon i {
         margin: 10px 10px;
     }
+}
