@@ -105,33 +105,11 @@
     font-weight: 400;
 }
 
-/* footer-styles */
-
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-content .logo img {
-    width: 100%;
-    height: 100%;
-}
-
-.icon i {
-    margin: 20px 50px;
-}
-
-.copyright {
-    text-align: right;
-}
-
 /* champion section style */
 .champion-area {
     margin-bottom: 100px;
     margin: 5% 10%;
+
 }
 
 .champions {
@@ -196,6 +174,31 @@
 }
 
 
+/* footer-styles */
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.icon i {
+    margin: 20px 50px;
+}
+
+.copyright {
+    text-align: right;
+}
+
+
+
 /* add media query */
 @media only screen and (max-width: 668px) {
     .top-section {
@@ -218,8 +221,8 @@
     }
 
     .section-thumbnail img {
-        width: 70%;
-        height: 300px;
+        width: 80%;
+        height: 80%;
     }
 
 
@@ -246,23 +249,69 @@
         margin-left: 5px;
     }
 
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 27px;
+        margin: 10%;
 
-
-
-
-
-
-
-
-
-
-
-
-    .top-players,
-    .champion-area,
-    .upcoming-copa,
-    footer {
-        display: none;
     }
+
+    .champion-area {
+        margin-bottom: 100px;
+        margin: 10% 10%;
+        height: 1350px;
+    }
+
+    .champions {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+
+    }
+
+    .upcoming-copa {
+        height: 1300px;
+        margin: 10%;
+        border-radius: 20px;
+        padding: 2%;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+    }
+
+    .teams {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5%;
+        grid-row-gap: .5%;
+
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content .logo img {
+        width: 50%;
+        height: 50%;
+        margin-left: 80px;
+    }
+
+    .icon i {
+        margin: 10px 10px;
+    }
+
+    .copyright {
+        text-align: right;
+    }
+
+
+
+
 
 }
