@@ -46,18 +46,16 @@ body {
     justify-content: space-between;
 }
 
-.section-thumbnail img {
-    width: 556.01px;
-    height: 438px;
-}
-
-
-
-.section-title {
+#section-title {
     font-size: 64px;
     width: 485px;
     height: 260px;
     margin: 0;
+}
+
+.section-thumbnail img {
+    width: 556.01px;
+    height: 438px;
 }
 
 .live-button {
@@ -131,9 +129,6 @@ body {
 
 }
 
-.section-title {
-    padding-left: 2%;
-}
 
 .champion {
     padding: 20px;
@@ -242,11 +237,11 @@ body {
 
 
 
-    .section-tilte {
+    #section-title {
         font-size: 36px;
         width: 278px;
         height: 138px;
-        margin: 0;
+        margin-bottom: 0;
     }
 
     .live-button {
@@ -343,7 +338,7 @@ body {
         align-items: flex-start;
     }
 
-    .section-tilte {
+    #section-title {
         font-size: 37px;
         width: 366px;
         height: 0px;
