@@ -7,18 +7,20 @@
 
 .container {
     width: 100%;
+
 }
 
 /* top section styles */
 
 
 .top-section {
-    height: 677px;
+    height: 500px;
     color: #FFFFFF;
     background-color: #2D25A0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10% 10% 0% 10%;
+
 }
 
 .top-section:hover {
@@ -81,8 +83,8 @@
 }
 
 .player {
-    width: 330px;
-    height: 474px;
+    width: 1fr;
+    height: 1fr;
     padding: 15px 15px 33px 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -92,7 +94,7 @@
 
 .player-profile img {
     width: 100%;
-    height: 256px;
+    height: 100%;
 }
 
 .player-name {
@@ -114,18 +116,153 @@
 }
 
 .footer-content .logo img {
-    width: 483.87px;
-    height: 110px;
+    width: 100%;
+    height: 100%;
 }
 
 .icon i {
-    height: 32px;
-    width: 32px;
+    margin: 20px 50px;
 }
 
 .copyright {
     text-align: right;
 }
 
+/* champion section style */
+.champion-area {
+    margin-bottom: 100px;
+    margin: 5% 10%;
+}
+
+.champions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5%;
+    margin-top: 4%;
+
+
+}
+
+.section-title {
+    padding-left: 2%;
+}
+
+.champion {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.celebration img,
+.description {
+    width: 100%;
+    height: 40%;
+}
+
+/* uocoming-copa styles */
+.upcoming-copa {
+    margin: 5% 10%;
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    margin-bottom: 5%;
+
+}
+
+.team {
+    margin-top: 15%;
+    padding: 10%;
+    border-radius: 5%;
+    background: #908fda26;
+}
+
+.team-name {
+    text-align: center;
+}
+
+.flag img {
+    height: 60%;
+    width: 100%;
+}
+
 
 /* add media query */
+@media only screen and (max-width: 668px) {
+    .top-section {
+        height: 700px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 5%;
+        padding: 4%;
+        padding-bottom: 10%;
+        padding-left: 10%;
+    }
+
+    .section-info {
+        width: 80%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 50px 46px 0px 12px;
+    }
+
+    .section-thumbnail img {
+        width: 70%;
+        height: 300px;
+    }
+
+
+
+    .section-tilte {
+        font-size: 36px;
+        width: 278px;
+        height: 138px;
+        margin: 0;
+    }
+
+    .live-button {
+        width: 168px;
+        height: 44px;
+        padding: 10px 24px;
+        background-color: #E02C6D;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .live-button i {
+        margin-left: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .top-players,
+    .champion-area,
+    .upcoming-copa,
+    footer {
+        display: none;
+    }
+
+}
